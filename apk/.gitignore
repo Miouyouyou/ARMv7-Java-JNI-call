@@ -1,0 +1,11 @@
+.gradle
+.idea
+.externalNativeBuild
+*~
+*.bak
+*#
+\#*
+build
+local.properties
+app/build
+
