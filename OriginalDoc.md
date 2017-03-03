@@ -217,7 +217,7 @@ As stated in the official documentation, the internal descriptor of Java methods
 The codes associated to Java Types are :
 
 Java type|Internal code|
--|-|
+---|---|
 void|V|
 boolean|Z|
 byte|B|
