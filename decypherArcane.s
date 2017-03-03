@@ -82,7 +82,7 @@ Java_adventurers_decyphering_secrets_decyphapp_DecypherActivity_decypherArcaneSe
   @                         revealTheSecretID : r2,
   @                             secret_string : r3)
 
-	mov r2, r0         @ r2 : revealTheSecretID : Backup the ID for later
+	mov r2, r0         @ r2 : revealTheSecretID
 	mov r1, r5         @ r1 : thisObject
 	mov r0, r4         @ r0 : *_JNIEnv
 	mov r3, r7         @ r3 : secret_string
