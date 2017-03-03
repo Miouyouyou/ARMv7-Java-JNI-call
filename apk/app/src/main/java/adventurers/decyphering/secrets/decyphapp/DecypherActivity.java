@@ -6,22 +6,22 @@ import android.widget.TextView;
 
 public class DecypherActivity extends AppCompatActivity {
 
-  static { System.loadLibrary("arcane"); }
-  native void decypherArcaneSecrets();
+	static { System.loadLibrary("arcane"); }
+	native void decypherArcaneSecrets();
 
-  TextView mContentView;
+	TextView mContentView;
 
-  public void revealTheSecret(String text) {
-    mContentView.setText(text);
-  }
+	public void revealTheSecret(String text) {
+		mContentView.setText(text);
+	}
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 
-    setContentView(R.layout.activity_decypher);
+		setContentView(R.layout.activity_decypher);
 
-    mContentView = (TextView) findViewById(R.id.fullscreen_content);
-    decypherArcaneSecrets();
-  }
+		mContentView = (TextView) findViewById(R.id.fullscreen_content);
+		decypherArcaneSecrets();
+	}
 }
