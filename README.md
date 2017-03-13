@@ -9,17 +9,20 @@ This example demonstrates how to :
 * call this procedure from a Android app using the JNI
 * call a Java method, defined in the Android app, from the Assembly procedure using the JNI
 
-# Requirements
+# Building
+## Building using GNU Make
+
+### Requirements
 
 * GNU AS
 * Gold linker
 * An ARM Android phone/emulator on which you have installation privileges
 
-# Build
+### Build
 
 Run `make` from this folder
 
-## Manually
+#### Manually
 
 Run the following commands :
 
@@ -35,7 +38,24 @@ cp $LIBNAME $APP_DIR/app/src/main/jniLibs/armeabi
 cp $LIBNAME $APP_DIR/app/src/main/jniLibs/armeabi-v7a
 ```
 
-# Install
+## Building using Android ndk-build
 
-Connect your ARMv7 Android phone/emulator and run `./gradlew installDebug` from the **apk** folder.
+### Requirements
+
+* The Android NDK path in your system's PATH directory
+
+### Build
+
+* On Windows, run 'mkbuild.bat'
+* On Linux, run 'mkbuild.sh'
+
+# Installing the prepared APK
+
+* Connect your ARMv7 Android phone/emulator
+* open a shell or a "command window"
+* `cd` to the **apk** folder
+
+Then :
+* On Windows run `gradlew installDebug`.
+* On Linux run `./gradlew installDebug`
 
